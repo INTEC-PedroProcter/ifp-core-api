@@ -1,0 +1,4 @@
+from person.serializers.person import PersonSerializer
+from person.serializers.phone_number import PersonPhoneNumberSerializer
+from person.serializers.address import PersonAddressSerializer
+from person.serializers.deceased import DeceasedSerializer

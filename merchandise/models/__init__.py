@@ -1,0 +1,1 @@
+from merchandise.models.merchandise import Merchandise, MerchandiseType

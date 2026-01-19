@@ -1,0 +1,1 @@
+from core.serializers.user import UserSerializer, get_user_model
