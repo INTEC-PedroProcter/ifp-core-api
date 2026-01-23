@@ -14,13 +14,13 @@ class EventTypeViewSet(viewsets.ReadOnlyModelViewSet):
     permission_classes = [permissions.IsAuthenticated]
 
 class EventLocationViewSet(viewsets.ModelViewSet):
-    lookup_field = "public_id"
+    # lookup_field = "public_id"
     queryset = EventLocation.objects.all().order_by("-created_at")
     serializer_class = EventLocationSerializer
     permission_classes = [permissions.DjangoModelPermissions]
 
 class FuneralEventViewSet(viewsets.ModelViewSet):
-    lookup_field = "public_id"
+    # lookup_field = "public_id"
     queryset = FuneralEvent.objects.all().order_by("-created_at")
     serializer_class = FuneralEventSerializer
     permission_classes = [permissions.DjangoModelPermissions]

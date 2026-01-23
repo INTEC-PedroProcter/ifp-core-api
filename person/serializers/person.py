@@ -6,4 +6,4 @@ class PersonSerializer(serializers.ModelSerializer):
     class Meta:
         model = Person
         fields = "__all__"
-        read_only_fields = ["updated_at", "created_at", "created_by"]
+        read_only_fields = ["created_at",]
