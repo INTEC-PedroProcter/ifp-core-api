@@ -11,4 +11,4 @@ class MerchandiseSerializer(serializers.ModelSerializer):
     class Meta:
         model = Merchandise
         fields = "__all__"
-        read_only_fields = ["updated_at", "created_at", "created_by"]
+        read_only_fields = ["created_at",]

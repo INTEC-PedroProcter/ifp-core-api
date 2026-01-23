@@ -6,7 +6,7 @@ class FuneralPackageSerializer(serializers.ModelSerializer):
     class Meta:
         model = FuneralPackage
         fields = "__all__"
-        read_only_fields = ["updated_at", "created_at", "created_by"]
+        read_only_fields = ["created_at",]
 
 class FuneralPackageMerchandiseSerializer(serializers.ModelSerializer):
     class Meta:

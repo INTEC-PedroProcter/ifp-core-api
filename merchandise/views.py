@@ -1,5 +1,5 @@
 from django.utils import timezone
-from rest_framework import permissions, viewsets
+from rest_framework import permissions, viewsets, response, status
 from merchandise.models import Merchandise, MerchandiseType
 from merchandise.serializers import MerchandiseSerializer, MerchandiseTypeSerializer
 
@@ -19,7 +19,7 @@ class MerchandiseViewSet(viewsets.ModelViewSet):
     def create(self, request, *args, **kwargs):
         data = request.data
         data["created_by"] = request.user.id
-
+        print(data)
         serializer = self.get_serializer(data=data)
         serializer.is_valid(raise_exception=True)
         self.perform_create(serializer)

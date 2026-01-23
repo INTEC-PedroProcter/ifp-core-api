@@ -1,4 +1,4 @@
-from rest_framework import permissions, viewsets, decorators
+from rest_framework import permissions, viewsets, status, response
 from event.models import EventType, EventLocation, FuneralEvent
 from event.serializers import (
     EventTypeSerializer, 
